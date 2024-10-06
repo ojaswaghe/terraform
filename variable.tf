@@ -1,7 +1,7 @@
 variable "ami" {
  type        = string
  description = "AMI ID for the EC2 instance"
- default     = "ami-0522ab6e1ddcc7055"
+ default     = "ami-09b0a86a2c84101e1"  # ubuntu 22.04
  
  validation {
    condition     = length(var.ami) > 4 && substr(var.ami, 0, 4) == "ami-"
