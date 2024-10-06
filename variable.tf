@@ -27,7 +27,8 @@ variable "keypair" {
 variable "sg" {
  type        = set(string)
  description = "Security group ID for the EC2 instance"
- default     = ["sg-0218cee1e44d762db"] 
+ default= ["sg-0e0879b50ebd23f84"]
+ #default     = ["sg-0218cee1e44d762db"] 
 }
 
 
