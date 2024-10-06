@@ -12,7 +12,7 @@ variable "ami" {
 variable "type" {
  type        = string
  description = "Instance type for the EC2 instance"
- default     = "t2.micro"
+ default     = "t2.large"
  #sensitive   = true
 }
 
@@ -38,7 +38,7 @@ variable "tags" {
  })
  description = "Tags for the EC2 instance"
  default = {
-   Name = "Node1"
+   Name = "jenkins-node"
    Env  = "Dev"
  }
 }

@@ -25,7 +25,7 @@ resource "aws_instance" "myvm" {
  tags          = var.tags
 
  root_block_device {
-    volume_size = 15 # Size of the root volume in GB
+    volume_size = 30 # Size of the root volume in GB
     volume_type = "gp3"
   }
  
